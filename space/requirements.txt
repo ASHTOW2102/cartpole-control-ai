@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+control
+gymnasium
+stable-baselines3
+torch
+pillow
+gradio
