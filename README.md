@@ -5,7 +5,7 @@ The same nonlinear cart-pole plant, balanced three different ways —
 scratch** — simulated with real equations of motion, animated, and compared
 on identical disturbances.
 
-**Live demo (Hugging Face Space):** <!-- HF_SPACE_URL -->
+**Trained model + weights on Hugging Face:** https://huggingface.co/AshishChaturvedi7/cartpole-control-ai
 
 ## The plant
 
@@ -117,9 +117,12 @@ python -m rl.train
 python compare.py
 ```
 
-The interactive version (pick a controller, tilt angle, and disturbance
-live) is in `space/app.py` and deployed as a Hugging Face Space — see
-`space/README.md`.
+An interactive version (pick a controller, tilt angle, and disturbance
+live, via Gradio) is in `space/app.py` — run it locally with
+`python space/app.py`. It isn't hosted live on Hugging Face since a
+CPU Gradio Space there now requires a PRO subscription; the trained
+model and all the code are instead published as a Hugging Face **model**
+repo (free, link above).
 
 ## Project layout
 
